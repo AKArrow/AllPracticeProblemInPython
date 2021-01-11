@@ -2,9 +2,9 @@ print "Enter A Conversion Type:\n1.Feet To Inch\n2.Inch To Feet\n3.Feet To Meter
 n=input("Enter A Choice:")
 v=input("Enter A Value:")
 sc={
-    1:float(v)*12,
-    2:float(v)/12,
-    3:float(v)/3.281,
-    4:float(v)*3.281
+    1:str('Feet To Inch:')+str(float(v)*12),
+    2:str('Inch To Feet:')+str(float(v)/12),
+    3:str('Feet To Meter:')+str(float(v)/3.281),
+    4:str('Meter To Feet:')+str(float(v)*3.281),
 }
 print sc.get(n,"There Is No Such Choice!")
